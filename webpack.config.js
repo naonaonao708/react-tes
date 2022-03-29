@@ -3,6 +3,10 @@ var webpack = require('webpack');
 var path    = require('path');
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true,
+  },
+  mode: 'production',
   context: path.join(__dirname, "src"),
   entry: "./js/client.js",
   module: {
